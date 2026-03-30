@@ -1,19 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aesthetic Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function Subtract(a,b){
+      function Subtract(a,b){
             return a - b;
         }
         let num1 = Number(prompt("Enter first number:"));
         let num2 = Number(prompt("Enter second number:"));
         console.log(Subtract(num1, num2));
+      function divide() {
+        let a = 9000;
+        let b = 90;
+
+        if (b == 0) {
+          console.log("Cannot divide by zero");
+        } else {
+          let result = a / b;
+          console.log("Quotient = " + result);
+        }
+      }
+
+      divide();
+      function multiply() {
+        let a = 21;
+        let b = 30;
+        let result = a * b;
+
+        console.log("Result:", result);
+      }
+
+      multiply();
+      function Add(a, b) {
+        return a + b;
+      }
+      let num1 = prompt("Enter first number:");
+      let num2 = prompt("Enter second number:");
+      console.log(Add(Number(num1), Number(num2)));
     </script>
-    
-</body>
+  </body>
 </html>
